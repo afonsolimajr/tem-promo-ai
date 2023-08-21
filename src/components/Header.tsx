@@ -22,7 +22,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const Links = ['Dashboard', 'Projects', 'Team'];
+const Links = ['Menu1', 'Menu2', 'Menu3'];
 
 const NavLink = (props: Props) => {
   const { children } = props;
@@ -55,9 +55,9 @@ export default function Header() {
             size={'md'}
             icon={
               isOpen ? (
-                <X size={32} color='#0030f0' />
+                <X size={32} color='red' />
               ) : (
-                <List size={32} color='#0030f0' />
+                <List size={32} color='red' />
               )
             }
             aria-label={'Open Menu'}
@@ -93,10 +93,10 @@ export default function Header() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
+                <MenuItem>Perfil</MenuItem>
+                <MenuItem>Favoritos</MenuItem>
                 <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
+                <MenuItem>Sair</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
