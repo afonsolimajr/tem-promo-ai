@@ -11,6 +11,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado A',
     foto: 'https://propao.agilecdn.com.br/4413_1.jpg?v=27-246342608',
     categoria: 'Grãos',
+    favorito: true,
   },
   {
     id: '2',
@@ -19,6 +20,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado B',
     foto: imagemPadrao,
     categoria: 'Grãos',
+    favorito: false,
   },
   {
     id: '3',
@@ -27,6 +29,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado C',
     foto: imagemPadrao,
     categoria: 'Massas',
+    favorito: false,
   },
   {
     id: '4',
@@ -35,6 +38,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado D',
     foto: imagemPadrao,
     categoria: 'Laticínios',
+    favorito: false,
   },
   {
     id: '5',
@@ -43,6 +47,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado A',
     foto: imagemPadrao,
     categoria: 'Laticínios',
+    favorito: false,
   },
   {
     id: '6',
@@ -51,6 +56,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado B',
     foto: imagemPadrao,
     categoria: 'Padaria',
+    favorito: false,
   },
   {
     id: '7',
@@ -59,6 +65,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado C',
     foto: imagemPadrao,
     categoria: 'Frutas',
+    favorito: false,
   },
   {
     id: '8',
@@ -67,6 +74,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado D',
     foto: imagemPadrao,
     categoria: 'Frutas',
+    favorito: false,
   },
   {
     id: '9',
@@ -75,6 +83,7 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado A',
     foto: imagemPadrao,
     categoria: 'Carnes',
+    favorito: false,
   },
   {
     id: '10',
@@ -83,5 +92,6 @@ export const produtosDataList: ProdutoInterface[] = [
     lojista: 'Supermercado B',
     foto: imagemPadrao,
     categoria: 'Peixes',
+    favorito: false,
   },
 ];

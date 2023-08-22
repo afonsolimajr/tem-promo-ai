@@ -33,7 +33,28 @@ export const Home = () => {
 
   const categorias = categoriasDataList;
   return (
-    <Flex direction='column' w='100%' maxW='480px' h='100vh' p={1}>
+    <Flex
+      direction='column'
+      w='100%'
+      maxW='480px'
+      h='100vh'
+      p={1}
+      overflowY='auto'
+      css={{
+        '&::-webkit-scrollbar': {
+          width: '4px',
+          height: '4px',
+        },
+        '&::-webkit-scrollbar-track': {
+          width: '6px',
+          height: '6px',
+        },
+        '&::-webkit-scrollbar-thumb': {
+          background: 'gray',
+          borderRadius: '25px',
+        },
+      }}
+    >
       <Flex>
         <InputGroup>
           <Input
@@ -87,13 +108,10 @@ export const Home = () => {
           </Flex>
         ))}
       </Flex>
-      <Flex
-        align='center'
-        w='full'
-        minH='160px'
-        gap={1}
+
+      <VStack
+        p={1}
         overflowY='auto'
-        overflowX='auto'
         css={{
           '&::-webkit-scrollbar': {
             width: '4px',
@@ -109,11 +127,32 @@ export const Home = () => {
           },
         }}
       >
-        <Image src='./banners/bannerAssai.png' w='auto' h='150px' />
-        <Image src='./banners/bannerCarrefour.png' w='auto' h='150px' />
-        <Image src='./banners/bannerAssai.png' w='auto' h='150px' />
-      </Flex>
-      <VStack p={1} overflowY='auto'>
+        <Flex
+          align='center'
+          w='full'
+          minH='160px'
+          gap={1}
+          overflowY='auto'
+          overflowX='auto'
+          css={{
+            '&::-webkit-scrollbar': {
+              width: '4px',
+              height: '4px',
+            },
+            '&::-webkit-scrollbar-track': {
+              width: '6px',
+              height: '6px',
+            },
+            '&::-webkit-scrollbar-thumb': {
+              background: 'gray',
+              borderRadius: '25px',
+            },
+          }}
+        >
+          <Image src='./banners/bannerAssai.png' w='auto' h='150px' />
+          <Image src='./banners/bannerCarrefour.png' w='auto' h='150px' />
+          <Image src='./banners/bannerAssai.png' w='auto' h='150px' />
+        </Flex>
         {produtos().map((p) => (
           <CardProduto key={p.id} produto={p} />
         ))}

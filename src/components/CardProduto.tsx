@@ -1,6 +1,7 @@
 import { Flex, Image, Text } from '@chakra-ui/react';
 import { ProdutoInterface } from '../interfaces/ProdutoInterface';
 import { format } from 'date-fns';
+import { Heart } from '@phosphor-icons/react';
 
 interface CardProdutoProps {
   produto: ProdutoInterface;
@@ -34,6 +35,11 @@ export const CardProduto = (props: CardProdutoProps) => {
           {format(props.produto.vencimento, 'dd/MM/yyyy')}
         </Text>
       </Flex>
+      <Heart
+        size={32}
+        color={props.produto.favorito ? 'red' : '#0030f0'}
+        weight={props.produto.favorito ? 'fill' : 'light'}
+      />
     </Flex>
   );
 };

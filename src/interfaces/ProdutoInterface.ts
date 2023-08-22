@@ -5,4 +5,5 @@ export interface ProdutoInterface {
   vencimento: Date;
   lojista: string;
   foto: string;
+  favorito: boolean;
 }
