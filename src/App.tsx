@@ -1,6 +1,7 @@
 import { Flex } from '@chakra-ui/react';
 import Header from './components/Header';
 import { Home } from './pages/Home';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         >
           <Header />
           <Home />
-          <Flex>Rodape</Flex>
+          <Footer />
         </Flex>
       </Flex>
     </div>
