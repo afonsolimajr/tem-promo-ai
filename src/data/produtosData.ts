@@ -1,5 +1,10 @@
 import { ProdutoInterface } from '../interfaces/ProdutoInterface';
 
+import tomate from '../assets/images/Tomate.png'
+import abacaxi from '../assets/images/abacaxi.png'
+import carne from '../assets/images/carne.png'
+import queijo from '../assets/images/queijo.png'
+
 const imagemPadrao =
   'https://www.casamagalhaes.com.br/blog/wp-content/uploads/2019/07/DESCUBRA-COMO-CRIAR-UM-MIX-DE-PRODUTOS-IDEAL-PARA-O-SEU-SUPERMERCADO-1.jpg';
 
@@ -15,38 +20,38 @@ export const produtosDataList: ProdutoInterface[] = [
   },
   {
     id: '2',
-    descricao: 'Feijão',
+    descricao: 'Tomate',
     vencimento: new Date('2023-10-15'),
     lojista: 'Supermercado B',
-    foto: imagemPadrao,
-    categoria: 'Grãos',
+    foto: tomate,
+    categoria: 'Frutas',
     favorito: false,
   },
   {
     id: '3',
-    descricao: 'Macarrão',
+    descricao: 'Queijo',
     vencimento: new Date('2023-08-25'),
     lojista: 'Supermercado C',
-    foto: imagemPadrao,
-    categoria: 'Massas',
+    foto: queijo,
+    categoria: 'Laticínios',
     favorito: false,
   },
   {
     id: '4',
-    descricao: 'Leite',
+    descricao: 'Carne',
     vencimento: new Date('2023-09-10'),
     lojista: 'Supermercado D',
-    foto: imagemPadrao,
-    categoria: 'Laticínios',
+    foto: carne,
+    categoria: 'Carnes',
     favorito: false,
   },
   {
     id: '5',
-    descricao: 'Ovos',
+    descricao: 'Abacaxi',
     vencimento: new Date('2023-08-28'),
     lojista: 'Supermercado A',
-    foto: imagemPadrao,
-    categoria: 'Laticínios',
+    foto: abacaxi,
+    categoria: 'Frutas',
     favorito: false,
   },
   {

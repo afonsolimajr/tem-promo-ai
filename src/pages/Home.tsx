@@ -1,20 +1,19 @@
+import { useState } from 'react';
 import {
   Flex,
-  Image,
-  Input,
-  InputGroup,
-  InputRightElement,
   VStack,
 } from '@chakra-ui/react';
 import { produtosDataList } from '../data/produtosData';
 import { CardProduto } from '../components/CardProduto';
-import { MagnifyingGlass } from '@phosphor-icons/react';
+
 import { categoriasDataList } from '../data/categoriasData';
-import { useState } from 'react';
+import { InputPesquisa } from '../components/InputPesquisa';
+import { CarrosselBanners } from '../components/CarrosselBanners';
 
 export const Home = () => {
   const [categoria, setCategoria] = useState('');
   const [textoPesquisa, setTextoPesquisa] = useState('');
+
   const produtos = () => {
     let retorno = produtosDataList;
 
@@ -22,7 +21,7 @@ export const Home = () => {
       retorno = retorno.filter((produto) => produto.categoria == categoria);
     }
 
-    if (textoPesquisa != '') {
+     if (textoPesquisa != '') {
       retorno = retorno.filter((produto) =>
         produto.descricao.toLowerCase().includes(textoPesquisa.toLowerCase())
       );
@@ -38,7 +37,8 @@ export const Home = () => {
       w='100%'
       maxW='480px'
       h='100vh'
-      p={1}
+      p={3}
+      bg={'white'}
       overflowY='auto'
       css={{
         '&::-webkit-scrollbar': {
@@ -50,29 +50,16 @@ export const Home = () => {
           height: '6px',
         },
         '&::-webkit-scrollbar-thumb': {
-          background: 'gray',
+          background: '#C9C9C9',
           borderRadius: '25px',
         },
       }}
     >
-      <Flex>
-        <InputGroup>
-          <Input
-            placeholder='O que você deseja hoje?'
-            value={textoPesquisa}
-            onChange={(e) => {
-              setTextoPesquisa(e.currentTarget.value);
-            }}
-          />
-          <InputRightElement>
-            <MagnifyingGlass size={24} color='gray' />
-          </InputRightElement>
-        </InputGroup>
-      </Flex>
+      <InputPesquisa texto={textoPesquisa} valorTexto={setTextoPesquisa} />
       <Flex
         align='center'
         w='full'
-        minH='50px'
+        minH='60px'
         gap={1}
         overflowY='auto'
         overflowX='auto'
@@ -86,25 +73,31 @@ export const Home = () => {
             height: '6px',
           },
           '&::-webkit-scrollbar-thumb': {
-            background: 'gray',
+            background: '#C9C9C9',
             borderRadius: '25px',
           },
         }}
       >
-        {categorias.map((c) => (
+        {categorias.map((item) => (
           <Flex
             justify='center'
             align='center'
             minW='100px'
             h='40px'
-            background={categoria == c ? 'red.200' : 'white'}
-            border='1px solid red'
+            background={categoria == item ? '#AF0D0D' : 'white'}
+            color={categoria == item ? 'white' : 'gray'}
+            border='1px solid #AF0D0D'
             borderRadius={5}
             onClick={() => {
-              categoria == c ? setCategoria('') : setCategoria(c);
+              categoria == item ? setCategoria('') : setCategoria(item);
+            }}
+            css={{
+              ':hover': {
+              cursor: 'pointer',
+              }
             }}
           >
-            {c}
+            {item}
           </Flex>
         ))}
       </Flex>
@@ -122,39 +115,14 @@ export const Home = () => {
             height: '6px',
           },
           '&::-webkit-scrollbar-thumb': {
-            background: 'gray',
+            background: '#C9C9C9',
             borderRadius: '25px',
           },
         }}
       >
-        <Flex
-          align='center'
-          w='full'
-          minH='160px'
-          gap={1}
-          overflowY='auto'
-          overflowX='auto'
-          css={{
-            '&::-webkit-scrollbar': {
-              width: '4px',
-              height: '4px',
-            },
-            '&::-webkit-scrollbar-track': {
-              width: '6px',
-              height: '6px',
-            },
-            '&::-webkit-scrollbar-thumb': {
-              background: 'gray',
-              borderRadius: '25px',
-            },
-          }}
-        >
-          <Image src='./banners/bannerAssai.png' w='auto' h='150px' />
-          <Image src='./banners/bannerCarrefour.png' w='auto' h='150px' />
-          <Image src='./banners/bannerAssai.png' w='auto' h='150px' />
-        </Flex>
-        {produtos().map((p) => (
-          <CardProduto key={p.id} produto={p} />
+        <CarrosselBanners />
+        {produtos().map((valor) => (
+          <CardProduto key={valor.id} produto={valor} />
         ))}
       </VStack>
     </Flex>
