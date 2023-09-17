@@ -1,13 +1,13 @@
 2302 - Projeto Integrador: Desenvolvimento de Sistemas Orientado a Dispositivos móveis e baseados na Web.
 
-## APLICATIVO tem-promo-ai
+## CONTEXTUALIZAÇÃO
 
-O aplicativo Tem Promo Aí foi desenvolvido com o objetivo facilitar as compras do(s) usuário(s), buscando por supermercados próximos
+O aplicativo **Tem Promo Aí** foi desenvolvido com o objetivo facilitar as compras do(s) usuário(s), buscando por supermercados próximos
 que oferecem promoções de seus produtos.
 
-Vale ressaltar, que como a disciplina é focada em desenvolvimento mobile, o aplicativo foi desenvolvido com esta ênfase.
+Vale ressaltar, que como a disciplina é focada em desenvolvimento **mobile**, o aplicativo desenvolvido manteve esta ênfase.
 
-Este aplicativo foi desenvolvido pelo Grupo 14 - 2302 - Projeto Integrador: Desenvolvimento de Sistemas Orientado a dispositivos móveis e baseados na Web
+Este aplicativo foi desenvolvido pelo **Grupo 14 - 2302 - Projeto Integrador: Desenvolvimento de Sistemas Orientado a dispositivos móveis e baseados na Web**
 Integrantes:
 
 1. ANA CAROLINA BEZERRA DE LIRA VASCONCELOS
@@ -19,7 +19,7 @@ Integrantes:
 
 ## TECNOLOGIAS UTILIZADAS NO DESENVOLVIMENTO:
 
-O aplicativo foi desenvolvido com foco em mobile, com isto foram utilizados as seguintes tecnologias:
+O **Tem Promo Aí** foi desenvolvido utilizando as seguintes tecnologias:
 
 1. Github;
 2. React;
@@ -31,17 +31,27 @@ E para o deploy do aplicativo, foi utilizado:
 
 1. Vercel.
 
-## EXECUSÃO DO APLICATIVO Tem Promo Aí:
+## ETAPA 1: ACESSAR E VISUALIZAR NOSSO APLICATIVO:
 
-Após o deploy do projeto no Vercel, para acessá-lo basta seguir os passos abaixo:
+Para acessar por completo nosso aplicativo, siga os passos abaixos.
 
-1. Para acessar o aplicativo, basta clicar no link abaixo:
+1. O código do nosso aplicativo está publicado no Github, para acessá-lo, basca clicar no link abaixo:
+Link: https://github.com/afonsolimajr/tem-promo-ai
+
+2. Para acessar o aplicativo, basta clicar no link abaixo:
 Link: https://tem-promo-ai.vercel.app/
 
-2. Após acessar o link, você usuário estará na home do aplicativo.
+3. Após acessar o link acima, você usuário estará na home (página inicial) do aplicativo.
 
-3. No canto superior o usuário tem suas informações, como Endereço, Foto de perfil, Favoritos e a opção de Sair.
+4. No canto superior o usuário tem suas informações, como Endereço, Foto de perfil, Favoritos e a opção de Sair.
 
-4. Na home, há o menu de produtos disponíveis, onde o usuário pode realizar o filtro de acordo com a classificação do produto.
+5. Na home, há o menu de produtos disponíveis, onde o usuário pode realizar o filtro de acordo com a classificação do produto.
 
-5. Por exemplo, para filtrar por Grãos, será exibido apenas produtos que são classificados como grãos.
+6. Por exemplo, para filtrar por Grãos, será exibido apenas produtos que são classificados como grãos.
+
+## ETAPA 2: VÍDEO EXPLICATIVO PARA ACESSAR O APLICATIVO:
+
+Abaixo, foi criado um vídeo mostrando ao usuário como acessar de forma correta o nosso aplicativo.
+
+1. Para visualizar o vídeo, acesse o link abaixo:
+Link:
