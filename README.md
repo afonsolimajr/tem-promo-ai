@@ -54,4 +54,4 @@ Link: https://tem-promo-ai.vercel.app/
 Abaixo, foi criado um vídeo mostrando ao usuário como acessar de forma correta o nosso aplicativo.
 
 1. Para visualizar o vídeo, acesse o link abaixo:
-Link:
+Link: https://youtu.be/cOwvtG-y2mM
